@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="budget.css" />
+    <title>Budget Web App</title>
+    <link rel="shortcut icon" type="image" href="icons8-money-bag-32.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="budget tracker.png" alt="BudgetLogo" />
+      </div>
+      <h1>Track Your Expense</h1>
+      <form id="form" class="add">
+        <input type="date" id="date" class="add-date" placeholder="Date" />
+        <input
+          type="text"
+          id="expen"
+          class="add-expense"
+          placeholder="Enter Expense"
+        />
+        <input
+          type="number"
+          id="amou"
+          class="add-amount"
+          placeholder="Enter Amount"
+        />
+
+        <!-- <button class="btn-add">Add Expenses</button> -->
+        <button class="btn" onclick="addHtmlTableRow();">Add</button>
+        <button class="btn" onclick="editHtmlTbleSelectedRow();">Edit</button>
+        <button class="btn" onclick="removeSelectedRow();">Remove</button>
+
+        <h2>Transaction History</h2>
+        <div>
+          <div class="table" id="tab1">
+            <table id="table">
+              <tr>
+                <th>Date</th>
+                <th>Expenses</th>
+                <th>Amount</th>
+              </tr>
+              <tr>
+                <td>2022-06-06</td>
+                <td>House Rent</td>
+                <td>100000</td>
+              </tr>
+              <tr>
+                <td>2021-08-06</td>
+                <td>Car Fuel</td>
+                <td>25000</td>
+              </tr>
+              <tr>
+                <td>2022-13-06</td>
+                <td>Clothes</td>
+                <td>500000</td>
+              </tr>
+              <tr>
+                <td>2022-20-06</td>
+                <td>Theraphy</td>
+                <td>15000</td>
+              </tr>
+            </table>
+            <br />
+            <br />
+            <span id="val"></span>
+            <br />
+            <br />
+            <button class="print" onclick="window.print()">Print</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="budget tracker.png"></script>
+  </body>
+  © 2022 Conslate Koyo Budget App
+</html>
